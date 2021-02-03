@@ -1,0 +1,169 @@
+\documentclass[11pt]{article}
+\usepackage{dsfont}
+\usepackage[parfill]{parskip}
+\usepackage{xcolor,colortbl}
+\newcommand{\gray}{\cellcolor{gray!40!white}}
+\newcommand{\red}[1]{\color{red}{#1}}
+\newcommand{\orange}[1]{\color{orange}{#1}}
+\newcommand{\blue}[1]{\color{blue}{#1}}
+\newcommand{\bfblu}[1]{\blue{\txbf{#1}}}
+\newcommand{\undbluf}[1]{\bfblu{\underline{#1}}}
+\usepackage[utf8]{inputenc}
+\usepackage{framed}
+\newcommand{\bfund}[1]{\textbf{\underline{#1}}}
+\newcommand{\secund}[1]{\section{\underline{#1}}}
+\newcommand{\subsecund}[1]{\subsection{\underline{#1}}}
+\newcommand{\subsubsecund}[1]{\subsubsection{\underline{#1}}}
+\newcommand{\texfrac}[2]{\dfrac{\textrm{#1}}{\textrm{#2}}}
+\usepackage[margin=1in]{geometry}
+\newcommand{\Memscans}{Members and candidates}
+\newcommand{\memcan}{member or candidate}
+\newcommand{\orund}[1]{\orange{\underline{#1}}}
+\newcommand{\borund}[1]{\orund{\txbf{#1}}}
+\usepackage{lua-visual-debug}
+\newcommand{\oranb}[1]{\orange{\txbf{#1}}}
+\newcommand{\qed}{\flushright$\blacksquare$\flushleft}
+\usepackage{booktabs}
+\newcommand{\grbf}[1]{\cellcolor{gray!40!white}\textbf{#1}}
+\newcommand{\txbf}[1]{\textbf{#1}}
+\newcommand{\txit}[1]{\textit{#1}}
+\newcommand{\tx}[1]{\textrm{#1}}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newcommand{\Sum}{\displaystyle\sum}
+\newcommand{\orbfit}[1]{\textit{\textbf{\orange{#1}}}}
+\usepackage{tabularx,ragged2e,booktabs,caption}
+\newcommand{\ex}{\textbf{\underline{ex:} }}
+\usepackage{subfigure}
+\usepackage{multicol,tabularx,capt-of}
+\usepackage{hhline}
+\usepackage{mathtools}
+\usepackage[shortlabels]{enumitem}
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;}
+\usepackage{actuarialangle}
+\newcommand{\ang}[1]{\actuarialangle{#1}}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{cancel}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\usepackage{amsmath}
+\usepackage{setspace}
+\singlespacing
+\graphicspath{ {./images/} }
+\begin{document}
+
+\begin{document}
+
+\begin{center}
+{\Huge {Math 502A}}
+
+\vspace{0.2in}
+
+{\Large {Classwork Assignment 1}}
+\end{center}
+
+\vspace{0.1in}
+
+\section{Exercise 1.4.6}
+
+Suppose that one card is to be selected from a deck of 20 cards that contains 10 red cards numbered from 1 to 10 and 10 blue cards numbered from 1 to 10. Let $A$ be the event that a card with an even number is selected, let $B$ be the event that a blue card is selected, and let $C$ be the even that a card with a number less than 5 is selected. Describe the sample space $S$ and describe each of the following events in words.
+
+\begin{enumerate}[(a)]
+\item $A \cap B \cap C$
+
+
+
+$A\cap B\cap C$ describes the event where a Blue card is selected which has a value of 2 or 4. 
+
+\item $B \cap C^C$
+
+
+$B \cap C^C$ describes a blue card with a value of 5 or more. 
+
+
+
+\item $A \cup B \cup C$
+
+
+$A \cup B \cup C$ describes an even card of any color OR a blue card of any value OR a card of values LESS than 5 of any color. 
+
+
+\item $A \cap \left(B \cup C\right)$
+
+
+$A \cap \left(B \cup C\right)$ describes even card which is either less than 5 OR blue. 
+
+
+\item $A^C \cap B^C \cap C^C$
+
+
+$A^C \cap B^C \cap C^C$ describes an odd red card with a value of 5 or more. 
+
+\end{enumerate}
+
+\section {Exercise 1.4.8}
+
+A simplified model of the human blood-type system has four blood types: A, B, AB, and O. There are two antigens, anti-A and anti-B, that react with a person's blood in different ways depending on the blood type. Anti-A reacts with blood types A and AB, but not with B and O. Anti-B reacts with blood types B and AB, but not with A and O. Suppose that a person's blood is sampled and tested with the two antigens.
+
+Let $A$ be the event that the blood reacts with anti-A, and let $B$ be the event that it reacts with anti-B. Classify the person's blood type using the events $A$, $B$, and their complements.
+
+
+
+$A$ describes having a blood type of A or AB
+
+$A^C$ describes having a blood type of B or O. 
+
+$B$ describes having a blood type of B or AB. 
+
+$B^C$ describes having a blood type of A or O
+
+
+\section{Exercise 1.5.14}
+
+Suppose that, for the person tested in the previous exercise, the probability of type O blood is 0.5, the probability of type A blood is 0.34, and the probability of type B blood is 0.12.
+
+
+Let $P(O)=0.5,P(A)=0.34,P(B)=0.12$ thus $P(AB)=0.04$
+
+\begin{enumerate}[(a)]
+\item Find the probability that each of the antigens (anti-A, anti-B) will react with this person's blood.
+
+
+$P(\textrm{anti-a})=P(A\cup AB)=0.38$
+
+
+$P(\textrm{anti-b})=P(B\cup AB)=0.16
+
+\item Find the probability that both antigens will react with this person's blood.
+
+
+$P(\textrm{anti-a}\cap\textrm{anti-b})=P(AB)=0.04$
+
+
+\end{enumerate}
+
+\section{Exercise 1.6.4 and 1.6.5}
+
+A school contains students in grades 1, 2, 3, 4, 5, and 6. Grades 2, 3, 4, 5, and 6 all contain the same number of students, but there are twice this number in grade 1. If a student is selected at random from a list of all the students in the school:
+
+
+Let $2x$ be the number of students in grade 1. Thus the school has $7x$ students. 
+
+
+
+
+\begin{enumerate}[(a)]
+\item What is the probability that she will be in grade 3?
+
+$P(\textrm{grade 3})=\dfrac x{7x}=\dfrac17
+
+\item What is the probability that she will be in an odd-numbered grade?
+
+$P(\textrm{odd grade})=P(\textrm{1}\cup\textrm{3}\cup\textrm{5})=\dfrac{2x+x+x}{7x}=\dfrac47$
+
+
+\end{enumerate}
+
+\end{document}
